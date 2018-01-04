@@ -11,7 +11,7 @@ public class JanusICCE {
     Vertex r0 = g0.addVertex("root");
     System.out.println("TinkerGraph root ID: " + r0.id());
 
-    Graph g1 = JanusGraphFactory.build().set("storage.backend", "inmemory").open();
+    Graph g1 = JanusGraphFactory.build().set("storage.backend", "inmemory").open(); // fails here
     Vertex r1 = g1.addVertex("root");
     System.out.println("JanusGraph root ID: " + r1.id());
   }
