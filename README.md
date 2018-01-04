@@ -28,5 +28,5 @@ public class JanusICCE {
 Import `build.gradle` into your favorite IDE, or build and run with 
 
 ```
-$ gradle installDist && ./build/install/janus-icce/bin/janus-icce
+$ ./gradlew installDist && ./build/install/janus-icce/bin/janus-icce
 ```
