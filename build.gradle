@@ -1,0 +1,24 @@
+buildscript {
+  repositories {
+    jcenter()
+  }
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '4.2.1'
+}
+
+apply plugin: 'application'
+
+sourceCompatibility = 9
+targetCompatibility = 9
+
+mainClassName = 'org.cdlib.JanusICCE'
+
+repositories {
+  jcenter()
+}
+
+dependencies {
+  compile 'org.janusgraph:janusgraph-core:0.2.0'
+}
