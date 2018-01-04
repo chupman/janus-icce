@@ -1,6 +1,7 @@
 # janus-icce
 
-Demonstration of `IncompatibleClassChangeError` thrown by in-memory JanusGraph under Java 9.
+Demonstration of `IncompatibleClassChangeError` thrown by in-memory JanusGraph under Java 9
+(JanusGraph issue [#867](https://github.com/JanusGraph/janusgraph/issues/867)).
 
 It consists of a single class:
 
@@ -30,3 +31,6 @@ Import `build.gradle` into your favorite IDE, or build and run with
 ```
 $ ./gradlew installDist && ./build/install/janus-icce/bin/janus-icce
 ```
+
+See [this gist](https://gist.github.com/dmolesUC3/e6cdcbf0bcbcb1ba60678886e2c7f6d6) 
+for the resulting stacktrace.
